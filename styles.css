@@ -1,0 +1,94 @@
+* {
+    color: #fff;
+}
+/* General Styles */
+body {
+    font-style: italic;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+p {
+    width: 75vw;
+}
+/* Container Styles */
+.container {
+    background: #222;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+}
+
+/* Input and Button Styles */
+input[type="text"],
+textarea {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #000;
+    outline: none;
+    font-size: 16px;
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+}
+input[type="text"]:focus {
+    border-color: #fff;
+}
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+/* Button Styles */
+button {
+    width: auto;
+    height: 40px;
+    padding: 12px;
+    background-color: #fff; 
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: #000;
+}
+
+button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    .container {
+        padding: 15px;
+        width: 300px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px;
+        width: 120px; /* Adjusted for better layout on mobile */
+    }
+    
+    input[type="text"],
+    textarea {
+        font-size: 14px;
+        width: 90%;
+    }
+
+}
